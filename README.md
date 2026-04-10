@@ -13,7 +13,6 @@ Objective:
 Tools & Technologies:
 - Splunk Enterprise (SIEM)
 - Windows Event Logs
-- SPL (Search Processing Language)
 
 Data Source:
 - Sourcetype: WinEventLog:Security
