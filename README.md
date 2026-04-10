@@ -1,6 +1,7 @@
 Splunk Failed Login Detection (SOC Analyst Project)
 
 Overview:
+
 This project demonstrates how to detect and analyze failed login attempts using Splunk SIEM. It focuses on identifying brute-force attack patterns from Windows Security Event Logs.
 
 Objective:
