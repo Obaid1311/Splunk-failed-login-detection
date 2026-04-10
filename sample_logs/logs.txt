@@ -1,8 +1,51 @@
 EventCode=4625
 Account_Name=obaid
 Source_Network_Address=127.0.0.1
+Failure_Reason=Unknown user name or bad password
+Message=An account failed to log on.
+
+EventCode=4625
+Account_Name=admin
+Source_Network_Address=192.168.1.10
+Failure_Reason=Unknown user name or bad password
+Message=An account failed to log on.
+
+EventCode=4625
+Account_Name=testuser
+Source_Network_Address=192.168.1.15
+Failure_Reason=Account locked out
+Message=An account failed to log on.
+
+EventCode=4625
+Account_Name=guest
+Source_Network_Address=10.0.0.5
+Failure_Reason=User not allowed to log on at this computer
 Message=An account failed to log on.
 
 EventCode=4624
-Account_Name=SYSTEM
+Account_Name=obaid
+Source_Network_Address=127.0.0.1
 Message=An account was successfully logged on.
+
+EventCode=4625
+Account_Name=obaid
+Source_Network_Address=127.0.0.1
+Failure_Reason=Unknown user name or bad password
+Message=An account failed to log on.
+
+EventCode=4625
+Account_Name=admin
+Source_Network_Address=192.168.1.10
+Failure_Reason=Unknown user name or bad password
+Message=An account failed to log on.
+
+EventCode=4624
+Account_Name=Administrator
+Source_Network_Address=192.168.1.20
+Message=An account was successfully logged on.
+
+EventCode=4625
+Account_Name=guest
+Source_Network_Address=10.0.0.5
+Failure_Reason=Account disabled
+Message=An account failed to log on.
