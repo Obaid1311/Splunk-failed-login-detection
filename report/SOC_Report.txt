@@ -1,1 +1,57 @@
+SOC ANALYST REPORT
 
+Project Title: Detection of Failed Login Attempts using Splunk
+
+1. Objective:
+The objective of this project is to detect and analyze failed login attempts 
+in a Windows environment using Splunk SIEM. This helps identify potential 
+brute-force attacks and unauthorized access attempts.
+
+2. Tools Used:
+- Splunk Enterprise (SIEM tool)
+- Windows Event Logs (Security Logs)
+
+3. Data Source:
+- Log Source: Windows Security Event Logs
+- Sourcetype: WinEventLog:Security
+
+Event IDs:
+- 4625 → Failed Login Attempt
+- 4624 → Successful Login
+
+4. Methodology:
+- Collected logs from Windows Event Viewer
+- Filtered login events using Event IDs 4624 and 4625
+- Used SPL queries to analyze failed login attempts
+- Counted failed logins per user
+- Created visualization using charts
+
+5. Sample Queries:
+index=main sourcetype="WinEventLog:Security" (EventCode=4624 OR EventCode=4625)
+| eval Status=if(EventCode=4625,"Failed","Successful")
+| table _time Status Account_Name host Source_Network_Address Source_Port
+| sort -_time
+
+index=main EventCode=4625 sourcetype="WinEventLog:Security"
+| stats count by Account_Name, host
+| sort -count
+
+6. Findings:
+- Multiple failed login attempts detected for user "obaid"
+- Source IP: 127.0.0.1 (local system)
+- Indicates brute-force attack simulation
+
+7. Security Analysis:
+- Repeated failed logins indicate brute-force attempts
+- Monitoring Event ID 4625 is critical in SOC operations
+- Correlation with successful logins helps detect compromise
+
+8. Recommendations:
+- Enable account lockout policy
+- Implement Multi-Factor Authentication (MFA)
+- Monitor logs continuously
+- Create alerts for repeated failed logins
+
+9. Conclusion:
+This project demonstrates the use of Splunk SIEM for log analysis, 
+threat detection, and security monitoring.
