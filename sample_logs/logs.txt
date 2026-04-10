@@ -1,1 +1,8 @@
+EventCode=4625
+Account_Name=obaid
+Source_Network_Address=127.0.0.1
+Message=An account failed to log on.
 
+EventCode=4624
+Account_Name=SYSTEM
+Message=An account was successfully logged on.
