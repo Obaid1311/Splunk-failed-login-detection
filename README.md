@@ -72,15 +72,15 @@ Screenshots:
 
 - Search Results:
 
-"Search" (screenshots/search_results.png)
+"Search" (02_screenshots/search_results.png)
 
 - Visualization Chart:
 
-"Chart" (screenshots/chart.png)
+"Chart" (02_screenshots/chart.png)
 
 - Event Log Details:
 
-"Logs" (screenshots/event_log.png)
+"Logs" (02_screenshots/event_log.png)
 
 Project Structure:
 
