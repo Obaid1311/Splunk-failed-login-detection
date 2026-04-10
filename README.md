@@ -80,4 +80,5 @@ Skills Gained:
 - Basic Incident Analysis
 
 Conclusion:
+
 This project showcases practical SOC analyst skills such as log analysis, threat detection, and security monitoring using Splunk.
