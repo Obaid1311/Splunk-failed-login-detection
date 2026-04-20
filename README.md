@@ -1,4 +1,4 @@
-Splunk Failed Login Detection (SOC Analyst Project)
+Splunk SIEM – Brute Force Detection
 
 Overview:
 
