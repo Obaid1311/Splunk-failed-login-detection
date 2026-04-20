@@ -1,4 +1,4 @@
-Splunk SIEM – Brute Force Detection
+Splunk Failed Login Detection
 
 Overview:
 
